@@ -1,0 +1,20 @@
+<?php
+    /*    */
+    $db_host = "localhost";
+    $db_user = "root";
+    $db_pass = "holihks45";
+    $db_name = "edis";
+    
+    $CONN01 = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+
+      /* 
+     $db_host = "localhost";
+    $db_user = "sukiptec_skr";
+    $db_pass = "cornelia!@#$%";
+    $db_name = "sukiptec_shospital";
+    
+    $CONN01 = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+*/
+     
+ 
+?>

@@ -1,0 +1,1 @@
+<?PHP header("LOCATION:EDIS/index.php") ?>
