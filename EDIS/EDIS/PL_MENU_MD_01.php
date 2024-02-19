@@ -13,6 +13,7 @@
             <a href="?PG_SA=PL_MD_01&PG_SA_SUB=PL_MD_01_IN_USER" class="badge bg-primary"><i class="fas fa-plus-circle"></i> Entri User</a><br>
             <a href="?PG_SA=PL_MD_01&PG_SA_SUB=PL_MD_01_IN_DISJNS" class="badge bg-primary"><i class="fas fa-plus-circle"></i> Entri Jenis Disposisi</a><br>
             <a href="?PG_SA=PL_MD_01&PG_SA_SUB=PL_MD_01_IN_INVENJNS" class="badge bg-primary"><i class="fas fa-plus-circle"></i> Entri Jenis Inven</a><br>
+            <a href="?PG_SA=PL_MD_01&PG_SA_SUB=PL_MD_01_IN_RUANG" class="badge bg-primary"><i class="fas fa-plus-circle"></i> Entri Ruang </a><br>
             <a href="?PG_SA=PL_MD_01&PG_SA_SUB=PL_MD_01_IN_USER" class="badge bg-primary"><i class="fas fa-plus-circle"></i> Entri User / WS</a>
             <?PHP } ?>
         <!--  -->
@@ -33,6 +34,8 @@
         <a href="?PG_SA=PL_MD_01&PG_SA_SUB=PL_MD_01_IN02_DIS" class="badge bg-primary"> <i class="fas fa-plus-circle"></i> UPLOAD DISPOSISI</a>
         <br>
         <a href="?PG_SA=PL_MD_01&PG_SA_SUB=PL_MD_01_IN_INVEN" class="badge bg-primary"> <i class="fas fa-plus-circle"></i> ENTRI INVEN-RENT</a>
+        <br>
+        <a href="?PG_SA=PL_MD_01&PG_SA_SUB=PL_MD_01_IN_PEMRUANG" class="badge bg-primary"> <i class="fas fa-plus-circle"></i> ENTRI Pem.RUANG</a>
        <!--  -->
       </div>
     </div>

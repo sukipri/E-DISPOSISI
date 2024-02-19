@@ -11,6 +11,7 @@
         $IDDISP01 = @$SQL_ESC($CONN01,$_GET['IDDISP01']);
         $IDFLAG01 = @$SQL_ESC($CONN01,$_GET['IDFLAG01']);
         $IDINVEN01 = @$SQL_ESC($CONN01,$_GET['IDINVEN01']);
+        $IDRUANG01 = @$SQL_ESC($CONN01,$_GET['IDRUANG01']);
 
         #GET VIEW DELETE
         $IDDELDISP01 = @$SQL_ESC($CONN01,$_GET['IDDELDISP01']);
@@ -46,6 +47,10 @@
         #DATA INVEN
         $pl_vw_vinven01_sw = $CL_Q($CONN01,"$CL_SL srv_inven_01 WHERE idmain_inven_01='$IDINVEN01'");
         $pl_vw_vinven01_sww = $CL_FAS($pl_vw_vinven01_sw);
+/*-----------------------------------------------------*/
+        #DATA RUANG
+        $pl_vw_vruang01_sw = $CL_Q($CONN01,"$CL_SL srv_ruang_01 WHERE idmain_ruang_01='$IDRUANG01'");
+        $pl_vw_vruang01_sww = $CL_FAS($pl_vw_vruang01_sw);
 
 /*-----------------------------------------------------*/     
 

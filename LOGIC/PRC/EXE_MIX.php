@@ -147,6 +147,28 @@
 					include"../LAYOUT/NOTIF/NF_SAVE_FAILED.php";
 				}
 	   }
+/*-----------------------------------------------------*/
+	   		#VARIABLE 
+			$ruang_kode_01 = @$SQL_ESC($CONN01,$_POST['ruang_kode_01']);
+			$ruang_nama_01 = @$SQL_ESC($CONN01,$_POST['ruang_nama_01']);
+			#PROCCESSING INSERT
+			if(isset($_POST['simpan_ruang_01'])){
+				$save_ruang_01 = @$CL_Q($CONN01,"$IN srv_ruang_01(idmain_ruang_01,ruang_kode_01,ruang_nama_01,ruang_status_01)VALUES('$IDMAIN','$ruang_kode_01','$ruang_nama_01','2')");
+				if($save_ruang_01){
+					include"../LAYOUT/NOTIF/NF_SAVE_SUCCESS.php";
+				}else{ 
+					include"../LAYOUT/NOTIF/NF_SAVE_FAILED.php";
+				}
+			}
+			#PROCCESSING UPDATE
+			if(isset($_POST['update_ruang_01'])){
+				$save_ruang_01 = @$CL_Q($CONN01,"$UP srv_ruang_01 SET ruang_kode_01='$ruang_kode_01',ruang_nama_01='$ruang_nama_01' WHERE idmain_ruang_01='$IDRUANG01'");
+				if($save_ruang_01){
+					header("LOCATION:?PG_SA=PL_MD_01&PG_SA_SUB=PL_MD_01_IN_RUANG");
+				}else{ 
+					include"../LAYOUT/NOTIF/NF_SAVE_FAILED.php";
+				}
+			}
 		   
 	/*--------------------CLOSSSEEEESSS---------------------------------*/
 
