@@ -169,7 +169,22 @@
 					include"../LAYOUT/NOTIF/NF_SAVE_FAILED.php";
 				}
 			}
-		   
+			
+/*-----------------------------------------------------*/
+			#VARIABLE
+			$pemr_idmain_disp_01 = @$SQL_ESC($CONN01,$_POST['pemr_idmain_disp_01']);
+			$pemruang_tglmasuk_01 = @$SQL_ESC($CONN01,$_POST['pemruang_tglmasuk_01']);
+			$pemruang_jamasuk_01 = @$SQL_ESC($CONN01,$_POST['pemruang_jamasuk_01']);
+			#PROCCESSING 
+			if(isset($_POST['btn_simpan_pruang02_01'])){ 
+				$save_pemruang_01 = $CL_Q($CONN01,"$IN srv_ruangpem_01(idmain_ruangpem_01,idmain_ruang_01,idmain_user_01,idmain_disp_01,pemruang_kode_01,pemruang_tglmasuk_01,pemruang_jamasuk_01)VALUES('$IDMAIN','$IDRUANG01','$hr_vusr01_sww[idmain_user_01]','$pemr_idmain_disp_01',$IDKODE,'$pemruang_tglmasuk_01','$pemruang_jamasuk_01')");
+				if($save_pemruang_01){
+					include"../LAYOUT/NOTIF/NF_SAVE_SUCCESS.php";
+				}else{
+					include"../LAYOUT/NOTIF/NF_SAVE_FAILED.php";
+				}
+				
+			}
 	/*--------------------CLOSSSEEEESSS---------------------------------*/
 
 	?>

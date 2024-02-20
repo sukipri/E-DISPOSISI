@@ -60,7 +60,7 @@
                 if($pl_nr_ls_vpemruang01_sw > 0){
                     echo "<span class='badge bg-primary'><i class='far fa-file-alt'></i> ".$pl_ls_vdisp01_sww['disp_nama_01']."</span>";
                 }else{
-                  echo "<a href='' class='badge bg-secondary'><i class='fas fa-plus-circle'></i> Pesan</a>";
+                  echo "<a href='?PG_SA=PL_MD_01&PG_SA_SUB=PL_MD_01_IN_PEMRUANG02&IDRUANG01=$slc_ruang_01&RJAM01=$pemruang_jam[$pemruang_jam_no]&TG01=$txt_tg01_01' class='badge bg-secondary'><i class='fas fa-plus-circle'></i> Pesan</a>";
                 }
             ?>
           </td>
